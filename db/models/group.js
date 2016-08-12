@@ -11,8 +11,7 @@ module.exports = db.define('group', {
         allowNull: false
     },
     expirationDate: {
-        type: Sequelize.DATE,
-        allowNull: false
+        type: Sequelize.DATE
     }
 });
 
