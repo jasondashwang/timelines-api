@@ -2,5 +2,7 @@
 var db = require('./_db');
 module.exports = db;
 
-var User = require('./models/user');
+db.User = require('./models/user');
+db.Group = require('./models/group');
 
+db.User.belongsTo(db.Group);
